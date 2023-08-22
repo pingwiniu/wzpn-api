@@ -23,7 +23,7 @@ In two team focused scripts (`upcoming_match.php` and `last_match.php`), you'll 
 
 In the `table.php` script, the `id` parameter needs to be extracted from the URL. Modify the URL to include a query parameter that includes the ID, for example:
 
-https://wielkopolskizpn.pl/jesien-2023/?id=54515
+`https://wielkopolskizpn.pl/jesien-2023/#54143`
 
 In the team focused scripts (`upcoming_match.php` and `last_match.php`) you will need to specify the `id` parameter yourself, do it in the POST request body.
 
