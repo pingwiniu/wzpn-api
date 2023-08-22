@@ -15,21 +15,21 @@ Before using the scripts, you need to configure a few parameters to make them wo
 - `last_match.php`: Script to fetch and display the most recent match.
 - `table.php`: Script to fetch and display league table data.
 
-### 2. URL Configuration
+### 2. Team Configuration
 
-In each script (`upcoming_match.php`, `last_match.php`, and `table.php`), you'll find a section where the target URL is set. Update the URL as follows:
+In two team focused scripts (`upcoming_match.php` and `last_match.php`), you'll find strings where the target team is referenced. Update the strings to contain your team name in uppercase.
 
-$url = 'https://wielkopolskizpn.pl/box/ajax_league_map';
-
-### 3. Extracting ID from URL
+### 3. ID Configuration.
 
 In the `table.php` script, the `id` parameter needs to be extracted from the URL. Modify the URL to include a query parameter that includes the ID, for example:
 
 https://wielkopolskizpn.pl/jesien-2023/?id=54515
 
-### 4. License
+In the team focused scripts (`upcoming_match.php` and `last_match.php`) you will need to specify the `id` parameter yourself, do it in the POST request body.
 
-This project is licensed under the GNU General Public License v3.0. Please review the [LICENSE](LICENSE) file for more details.
+### 4. Season Configuration.
+
+In each script you will need to configure the season that you are pulling the data from, do it in the POST request body.
 
 ## Usage
 
@@ -38,7 +38,7 @@ To use the scripts:
 1. Make sure you have PHP installed on your server.
 2. Configure the script files as described above.
 3. Upload the script files to your web server.
-4. Access the scripts through your web browser or make HTTP requests to them.
+4. Access the scripts through your web browser or make HTTP/S requests to them.
 
 ## Disclaimer
 
