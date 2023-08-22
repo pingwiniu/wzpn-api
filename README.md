@@ -3,7 +3,7 @@
 
 ## Introduction
 
-This repository contains PHP scripts to retrieve and process football-related data from the Wielkopolski ZPN website (wielkopolskizpn.pl). The scripts provide functionality to fetch upcoming matches, last matches, and league table data for the given season.
+This repository contains PHP scripts to retrieve and process football-related data from the WZPN (wielkopolskizpn.pl). The scripts provide functionality to fetch upcoming matches, last matches, and league table data for the given season.
 
 ## Configuration
 
